@@ -5,6 +5,7 @@
 
 
 ## STEP 2
+* use mysql database schema (cd bin/config)
 * implement get_all_region
 
 ## STEP 3
