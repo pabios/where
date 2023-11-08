@@ -4,7 +4,7 @@ import { getUserById, login, randomUser, users, editProfil, deleteUser,  create,
 import {posts, addPost, likePost, editPost,getPost,deletePost} from '../controllers/postController.js';
 import { authGuard } from '../middlewares/AuthGuard.js';
 import {addCategory,getAllCategory} from "../controllers/categoryController.js";
-import {getAllRegion} from "../controllers/regionController.js";
+import {getAllRegion, readRegionsData,getAll} from "../controllers/regionController.js";
 
 const router = Router();
 
@@ -13,7 +13,15 @@ const router = Router();
  *  REGION
  */
 
-router.get("/api/gn/regions", getAllRegion);
+router.get("/api/gn/regions", async (req, res) => {
+    try {
+        const data = await getAll();
+        res.json(data);
+    } catch (error) {
+        console.error('Erreur lors de la récupération des données :', error);
+        res.status(500).json({ error: 'Erreur serveur lors de la récupération des données.' });
+    }
+});
 
 /************************************************ NE PAS TOUCHER *****************************************/
 /**

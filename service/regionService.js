@@ -1,13 +1,18 @@
 import {CityModel, RegionModel} from "../models/Region.js";
+import {connectToMysql} from "../models/db.js";
 
+import {readRegionsData} from "../controllers/regionController.js"
 export async function get_all_region(req,res){
-    try {
-        const regions = await RegionModel.find().populate("cities");
-        res.json(regions);
-    } catch (err) {
-        console.error(err);
-        res.status(500).send("Erreur serveur");
-    }
+
+    return readRegionsData();
+
+    // try {
+    //     const regions = await RegionModel.find().populate("cities");
+    //     res.json(regions);
+    // } catch (err) {
+    //     console.error(err);
+    //     res.status(500).send("Erreur serveur");
+    // }
 }
 
 export async function get_city_by_region(req,res){

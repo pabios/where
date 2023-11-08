@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+import * as fs from 'fs/promises';
+
 const { model, Schema } = mongoose;
 
 const SubPrefectureSchema = new Schema({

@@ -8,19 +8,19 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- Schema mydb
 -- -----------------------------------------------------
 -- -----------------------------------------------------
--- Schema guinea
+-- Schema whereLocate
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
--- Schema guinea
+-- Schema whereLocate
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `guinea` DEFAULT CHARACTER SET utf8 ;
-USE `guinea` ;
+CREATE SCHEMA IF NOT EXISTS `whereLocate` DEFAULT CHARACTER SET utf8 ;
+USE `whereLocate` ;
 
 -- -----------------------------------------------------
--- Table `guinea`.`region`
+-- Table `whereLocate`.`region`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `guinea`.`region` (
+CREATE TABLE IF NOT EXISTS `whereLocate`.`region` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nomRegion` VARCHAR(45) NULL DEFAULT NULL,
   `population` VARCHAR(45) NULL DEFAULT NULL,
@@ -30,9 +30,9 @@ DEFAULT CHARACTER SET = utf8mb3;
 
 
 -- -----------------------------------------------------
--- Table `guinea`.`ville`
+-- Table `whereLocate`.`ville`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `guinea`.`ville` (
+CREATE TABLE IF NOT EXISTS `whereLocate`.`ville` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nomVille` VARCHAR(255) NULL DEFAULT NULL,
   `population` VARCHAR(255) NULL DEFAULT NULL,
@@ -41,15 +41,15 @@ CREATE TABLE IF NOT EXISTS `guinea`.`ville` (
   INDEX `fk_ville_region_idx` (`region_id` ASC) VISIBLE,
   CONSTRAINT `fk_ville_region`
     FOREIGN KEY (`region_id`)
-    REFERENCES `guinea`.`region` (`id`))
+    REFERENCES `whereLocate`.`region` (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
 
 -- -----------------------------------------------------
--- Table `guinea`.`sousPrefecture`
+-- Table `whereLocate`.`sousPrefecture`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `guinea`.`sousPrefecture` (
+CREATE TABLE IF NOT EXISTS `whereLocate`.`sousPrefecture` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nomSousPrecture` VARCHAR(255) NULL DEFAULT NULL,
   `population` VARCHAR(45) NULL DEFAULT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `guinea`.`sousPrefecture` (
   INDEX `fk_sousPrefecture_ville1_idx` (`ville_id` ASC) VISIBLE,
   CONSTRAINT `fk_sousPrefecture_ville1`
     FOREIGN KEY (`ville_id`)
-    REFERENCES `guinea`.`ville` (`id`))
+    REFERENCES `whereLocate`.`ville` (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb3;
 
