@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 // const Sequelize = require("sequelize");
 import {Sequelize} from "sequelize";
+import {createClient} from "redis";
 
 dotenv.config();
 mongoose.set('strictQuery', true);
@@ -41,3 +42,19 @@ export const connectToMysql = async () => {
 
 
  // go redis
+export const   connectToRedis=() =>{
+    const client = createClient({
+        host: '127.0.0.1',
+        port: 6379, // Port par défaut de Redis
+    });
+
+    client.on('connect', () => {
+        console.log('Connecté à Redis');
+    });
+
+    client.on('error', (err) => {
+        console.error('Erreur de connexion à Redis:', err);
+    });
+
+    return client;
+}

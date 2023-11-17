@@ -29,11 +29,6 @@ export async function users(req, res) {
   return res.status(200).json(response);
 }
 
-export async function usersOld(req, res) {
-  let response = await getAll-old();
-  console.log(response)
-  return res.status(200).json(response);
-}
 
 /**
  * users http://{hostname}:{port}/user/1
