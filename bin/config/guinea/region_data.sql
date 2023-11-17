@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.26, for macos11 (x86_64)
 --
--- Host: 127.0.0.1    Database: guinea
+-- Host: 127.0.0.1    Database: whereLocate
 -- ------------------------------------------------------
 -- Server version	8.0.26
 
