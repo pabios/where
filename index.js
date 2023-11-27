@@ -16,9 +16,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 
+// app.use(cors({
+//   origin: [
+//     "http://localhost:4200"
+//   ], credentials: true
+// }));
 app.use(cors({
   origin: [
-    "http://localhost:4200"
+    "*"
   ], credentials: true
 }));
 
@@ -36,9 +41,18 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", route);
 
 // ==========
-// App start
+// Uncomment if App start LOCAL
 // ==========
 
 app.listen(APP_PORT, () => {
   console.log(`App listening at http://${ APP_HOSTNAME }:${ APP_PORT }`);
 });
+
+
+// ==========
+// Comment else
+// ==========
+// const PORT = process.env.PORT || 3030;
+// app.listen(PORT, () => {
+//   console.log(`server started on port ${PORT}`);
+// });
