@@ -21,11 +21,16 @@ const app = express();
 //     "http://localhost:4200"
 //   ], credentials: true
 // }));
+const allowedOrigins = [
+  "http://localhost:4200",
+  "https://monimba.com",
+];
+
 app.use(cors({
-  origin: [
-    "*"
-  ], credentials: true
+  origin: allowedOrigins,
+  credentials: true,
 }));
+
 
 app.use(express.json())
 
