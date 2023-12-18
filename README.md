@@ -38,7 +38,7 @@ http://localhost:3000/api/gn/decoupage
  * - 
 
 # Licence
-Ce projet est sous licence Libre Open Source License. N'hésitez pas à l'utiliser, le modifier et le distribuer conformément aux termes de la licence.
+Ce projet est sous licence MIT. N'hésitez pas à l'utiliser, le modifier et le distribuer conformément aux termes de la licence.
 
 
 Merci de contribuer à l'API de découpage administratif de la Guinée ! 🚀🌍
