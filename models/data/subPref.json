@@ -3,12 +3,14 @@
  {"id":2, "nomSousPrecture":"Kouriah", "population":"", "ville_id":7},
  {"id":3, "nomSousPrecture":"Maneah", "population":"", "ville_id":7},
  {"id":4, "nomSousPrecture":"Wonkifong", "population":"", "ville_id":7},
+
  {"id":5, "nomSousPrecture":"Dubreka", "population":"", "ville_id":8},
  {"id":6, "nomSousPrecture":"Badi", "population":"", "ville_id":8},
  {"id":7, "nomSousPrecture":"Khoria", "population":"", "ville_id":8},
  {"id":8, "nomSousPrecture":"Tanene", "population":"", "ville_id":8},
  {"id":9, "nomSousPrecture":"Tondon", "population":"", "ville_id":8},
  {"id":10, "nomSousPrecture":"Wassou", "population":"", "ville_id":8},
+
  {"id":11, "nomSousPrecture":"Forekariah-Centre", "population":"", "ville_id":9},
  {"id":12, "nomSousPrecture":"Alassoya", "population":"", "ville_id":9},
  {"id":13, "nomSousPrecture":"Benty", "population":"", "ville_id":9},
@@ -19,6 +21,7 @@
  {"id":18, "nomSousPrecture":"Maferenya", "population":"", "ville_id":9},
  {"id":19, "nomSousPrecture":"Moussaya", "population":"", "ville_id":9},
  {"id":20, "nomSousPrecture":"Moribayah", "population":"", "ville_id":9},
+
  {"id":21, "nomSousPrecture":"Kindia-Centre", "population":"", "ville_id":10},
  {"id":22, "nomSousPrecture":"Bangouyah", "population":"", "ville_id":10},
  {"id":23, "nomSousPrecture":"Damankanyah", "population":"", "ville_id":10},
@@ -30,6 +33,7 @@
  {"id":29, "nomSousPrecture":"Samayah", "population":"", "ville_id":10},
  {"id":30, "nomSousPrecture":"Sougueta", "population":"", "ville_id":10},
  {"id":31, "nomSousPrecture":"Linsan", "population":"", "ville_id":10},
+
  {"id":32, "nomSousPrecture":"Telimele-Centre", "population":"", "ville_id":11},
  {"id":33, "nomSousPrecture":"Bourouwal", "population":"", "ville_id":11},
  {"id":34, "nomSousPrecture":"Daramagnaky", "population":"", "ville_id":11},
@@ -119,6 +123,8 @@
  {"id":118, "nomSousPrecture":"Sintali", "population":"", "ville_id":19},
  {"id":119, "nomSousPrecture":"Timbi Madina", "population":"", "ville_id":19},
  {"id":120, "nomSousPrecture":"Timbi Touni", "population":"", "ville_id":19},
+
+
  {"id":121, "nomSousPrecture":"Labe-Centre", "population":"", "ville_id":20},
  {"id":122, "nomSousPrecture":"Dalein", "population":"", "ville_id":20},
  {"id":123, "nomSousPrecture":"Daralabe", "population":"", "ville_id":20},
@@ -133,6 +139,8 @@
  {"id":132, "nomSousPrecture":"Sannou", "population":"", "ville_id":20},
  {"id":133, "nomSousPrecture":"Tountouroun", "population":"", "ville_id":20},
  {"id":134, "nomSousPrecture":"Tarambaly", "population":"", "ville_id":20},
+
+
  {"id":135, "nomSousPrecture":"Lelouma-Centre", "population":"", "ville_id":21},
  {"id":136, "nomSousPrecture":"Balaya", "population":"", "ville_id":21},
  {"id":137, "nomSousPrecture":"Djountou", "population":"", "ville_id":21},
