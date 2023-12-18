@@ -1,10 +1,10 @@
 [
  {"id":1, "nomRegion":"Region de Conakry", "population":""},
- {"id":2, "nomRegion":"Region de Kindia", "population":""},
- {"id":3, "nomRegion":"Region de Boke", "population":""},
- {"id":4, "nomRegion":"Region de Mamou", "population":""},
- {"id":5, "nomRegion":"Region de Labe", "population":""},
- {"id":6, "nomRegion":"Region de Kankan", "population":""},
- {"id":7, "nomRegion":"Region de Faranah", "population":""},
+ {"id":3, "nomRegion":"Region de Kindia", "population":""},
+ {"id":2, "nomRegion":"Region de Boke", "population":""},
+ {"id":5, "nomRegion":"Region de Mamou", "population":""},
+ {"id":4, "nomRegion":"Region de Labe", "population":""},
+ {"id":7, "nomRegion":"Region de Kankan", "population":""},
+ {"id":6, "nomRegion":"Region de Faranah", "population":""},
  {"id":8, "nomRegion":"Region de NZerekore", "population":""}
 ]
